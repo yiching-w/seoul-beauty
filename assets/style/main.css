@@ -1702,7 +1702,7 @@ img[data-src] {
     opacity: 0;
 }
 
-#intro {
+.service {
     background-color: #f8f2eb;
     padding: 30px 0;
     margin-top: 50px;
@@ -1727,11 +1727,6 @@ img[data-src] {
     border: none;
 }
 
-.myaccordion .card-header {
-    border-bottom-color: #EDEFF0;
-    background: transparent;
-}
-
 .myaccordion .fa-stack {
     font-size: 13px;
 }
@@ -1739,7 +1734,8 @@ img[data-src] {
 .myaccordion .btn {
     width: 100%;
     font-weight: bold;
-    color: #1d2434;
+    color: #f8f2eb;
+    font-size: 1.1rem;
     padding: 0;
 }
 
@@ -1754,4 +1750,55 @@ img[data-src] {
 
 #training {
     padding: 50px 0;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.card-body {
+    background-color: #e6bfa266 !important;
+    color: #1d2434;
+}
+
+.servicesImg {
+    position: relative;
+}
+
+.servicesImg::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    background: transparent;
+    border: 1px solid #F6F6F7;
+    transition: .3s;
+    z-index: 1;
+}
+
+.servicesImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fa-circle {
+    color: #f8f2eb;
+}
+
+.fa-inverse {
+    color: #e6bfa2;
+}
+
+.srvName {
+    font-weight: 800;
+    background: #e6bfa2;
+    margin: 5px 0;
+    padding: 0 5px;
 }
