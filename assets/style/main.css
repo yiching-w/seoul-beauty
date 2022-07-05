@@ -228,10 +228,12 @@ a:focus {
         background: rgba(0, 0, 0, .1) !important;
         z-index: 9;
     }
+
     .navbar.nav-sticky {
         padding: 10px 60px;
         background: #1d2434 !important;
     }
+
     .navbar a.nav-link {
         padding: 8px 15px;
         font-size: 14px;
@@ -245,9 +247,11 @@ a:focus {
         padding: 15px;
         background: #1d2434 !important;
     }
+
     .navbar a.nav-link {
         padding: 5px;
     }
+
     .navbar .dropdown-menu {
         box-shadow: none;
     }
@@ -265,7 +269,6 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
     height: calc(100vh - 50px);
     background: #f8f2eb;
     overflow: hidden;
@@ -296,6 +299,7 @@ a:focus {
     .hero .hero-text {
         padding-left: 15px;
     }
+
     .hero .hero-text .intro {
         font-size: 16px;
     }
@@ -306,6 +310,7 @@ a:focus {
         font-size: 30px;
         font-weight: 600;
     }
+
     .hero .hero-text p {
         font-size: 14px;
     }
@@ -316,6 +321,7 @@ a:focus {
         font-size: 25px;
         font-weight: 600;
     }
+
     .hero .hero-text p {
         font-size: 14px;
     }
@@ -375,6 +381,7 @@ a:focus {
     .page-header h2 {
         font-size: 35px;
     }
+
     .page-header a {
         font-size: 18px;
     }
@@ -429,6 +436,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0;
+    background-color: #f8f2eb;
 }
 
 .about .section-header {
@@ -1129,6 +1137,7 @@ a:focus {
     .contact .container-fluid {
         background: none;
     }
+
     .contact .contact-form {
         padding: 90px 0;
     }
@@ -1301,6 +1310,7 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
+
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
@@ -1401,9 +1411,13 @@ a:focus {
 }
 
 .sectionTitle {
-    font-size: 2rem;
     font-weight: 600;
-    color: #1d2434;
+    position: absolute;
+    top: 0;
+    font-size: 5em;
+    opacity: 0.2;
+    z-index: 1;
+    color: #68594e;
 }
 
 .sectionTitle::after {
@@ -1416,18 +1430,27 @@ a:focus {
 }
 
 @media (max-width:991px) {
+    .sectionTitle {
+        font-size: 4em;
+    }
+
     .sectionTitle::after {
         width: 120px;
     }
 }
 
 @media (max-width:578px) {
+    .sectionTitle {
+        font-size: 2.8em;
+    }
+
     .sectionTitle::after {
-        width: 150px;
+        width: 0px;
         top: auto;
         bottom: 0;
         left: 0;
     }
+
     .banner-item .title {
         font-size: 1rem;
         padding: 2px 6px;
@@ -1560,7 +1583,8 @@ a:focus {
     background-color: #e6bfa2;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     color: #fff;
     background-color: #e6bfa2;
 }
@@ -1569,9 +1593,11 @@ a:focus {
     .nav-pills {
         width: 100%;
     }
+
     .nav-link {
         padding: 2px;
     }
+
     .nav-pills .nav-link {
         font-size: 0.8rem;
     }
@@ -1597,6 +1623,7 @@ a:focus {
     box-shadow: 0px 0px 10px 0px #EEE;
     transition: 0.3s;
 }
+
 .list-item:hover {
     margin-top: -10px;
 }
@@ -1624,18 +1651,19 @@ a:focus {
     object-fit: cover;
 }
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
     .list-item {
         width: 250px;
         height: 250px;
     }
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
     .list-item {
         width: 200px;
         height: 200px;
     }
+
     .list-item a::after {
         top: 15px;
         right: 15px;
@@ -1644,14 +1672,14 @@ a:focus {
     }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .list-item {
         width: 210px;
         height: 210px;
     }
 }
 
-@media (max-width:578px){
+@media (max-width:578px) {
     .list-item {
         width: 150px;
         height: 150px;
@@ -1711,7 +1739,7 @@ img[data-src] {
 .myaccordion {
     background-color: #f8f2eb;
     margin: 0 auto;
-    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .cardTitle {
@@ -1744,7 +1772,7 @@ img[data-src] {
     text-decoration: none;
 }
 
-.myaccordion li + li {
+.myaccordion li+li {
     margin-top: 10px;
 }
 

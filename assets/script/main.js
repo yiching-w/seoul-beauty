@@ -96,6 +96,28 @@
         }
     });
 
+    // eyebrow carousel
+    $(".eyebrow-carousel").owlCarousel({
+        autoplay: true,
+        dots: false,
+        loop: true,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
